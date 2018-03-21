@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="vendors/bootstrap.css" media="all">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="vendors/bootstrap.min.css.map">
+    <link rel="stylesheet" href="vendors/bootstrap.css.map">
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Bookmark Application</title>
   </head>
 
-  <body>
+  <body onload="fetchBookmarks()">
 
     <div class="container">
       <div class="header clearfix">
@@ -34,7 +36,7 @@
 
       <div class="row marketing">
         <div class="col-lg-12">
-          <div id="booksmarksResults">
+          <div id="bookmarksResults">
 
           </div>
         </div>
@@ -48,6 +50,7 @@
 
     <script src="vendors/jquery.min.js" charset="utf-8"></script>
     <script src="vendors/bootstrap.min.js" charset="utf-8"></script>
-    <script src="client.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <!-- <link rel="stylesheet" href="vendors/bootstrap.css"> -->
   </body>
 </html>
